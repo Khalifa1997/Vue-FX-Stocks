@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <div class="d-flex justify-center mt-2 mb-4">
-      <a style="color: blue; font-size: larger" href="/stock">Go to Stocks</a>
+      <a style="color: blue; font-size: larger" href="/">Go to Stocks</a>
     </div>
     <v-row align="center" justify="center">
       <v-col cols="4">
