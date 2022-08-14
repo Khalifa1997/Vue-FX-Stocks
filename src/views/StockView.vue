@@ -22,8 +22,15 @@
         </v-row>
       </v-container>
     </v-form>
-    <div v-for="item in stocks">
-      <v-card :key="item.symbol" class="mx-auto my-10" max-width="344" outlined>
+    <div class="d-flex flex-row justify-center flex-wrap align-content-center">
+      <v-card
+        v-for="item in stocks"
+        :key="item.symbol"
+        class="mx-3 my-10"
+        min-width="320"
+        min-height="220"
+        outlined
+      >
         <v-list-item three-line>
           <v-list-item-content>
             <div class="text-overline mb-4 text-h5 red--text">
