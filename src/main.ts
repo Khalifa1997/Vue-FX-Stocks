@@ -1,5 +1,13 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import vuetify from "./plugins/vuetify";
+import { loadFonts } from "./plugins/webfontloader";
+import { createPinia } from "pinia";
+import piniaPersist from "pinia-plugin-persist";
 
-createApp(App).use(router).mount('#app')
+const pinia = createPinia();
+pinia.use(piniaPersist);
+loadFonts();
+
+createApp(App).use(router).use(pinia).use(vuetify).mount("#app");
