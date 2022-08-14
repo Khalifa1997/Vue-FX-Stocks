@@ -4,7 +4,7 @@ import FXView from "../views/FXView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/stock",
+    path: "/",
     name: "stocks",
     component: StockView,
   },
