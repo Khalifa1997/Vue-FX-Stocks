@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/stock"
+  to = "/stock.html"
+  status = 200
+[[redirects]]
+  from = "/fx"
+  to = "/fx.html"
+  status = 200
